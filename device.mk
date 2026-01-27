@@ -86,6 +86,11 @@ PRODUCT_PACKAGES += \
     carrier.retmea.prop \
     hardware.sku.XT2129-3.prop
 
+# Infinity Specific Properties
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.infinity.soc=Snapdragon_662 \
+    ro.infinity.camera=64MP+8MP+2MP+2MP+13MP
+
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
