@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clover_caprip.mk
+    $(LOCAL_DIR)/lineage_caprip.mk
