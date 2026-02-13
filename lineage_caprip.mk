@@ -10,11 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/caprip/device.mk)
 
-# Inherit some common clover stuff.
-$(call inherit-product, vendor/clover/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := clover_caprip
+PRODUCT_NAME := lineage_caprip
 PRODUCT_DEVICE := caprip
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(30)
