@@ -1,0 +1,9 @@
+# device props MISTIFY
+ro.mist.display=720 x 1600
+ro.mist.battery=5000mah
+ro.mist.soc=Snapdragon® 662
+ro.mist.camera=64MP + 8MP + 2MP + 2MP 
+ro.mist.front=13MP
+ro.mist.platform=SM6115
+ro.mist.screen=6.5' IPS LCD
+ro.mist.device.name=Motorola moto g30
