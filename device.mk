@@ -22,6 +22,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+# Lunaris Maintainer prop
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lunaris.maintainer=Shipu
+
 # Moto Camera 4
 TARGET_MOTCAMERA3 := caprip
 TARGET_USES_MOTCAMERA3 := true
