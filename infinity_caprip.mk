@@ -1,33 +1,31 @@
-# Copyright (C) 2025 Project InfinityX
-# Device configuration for Motorola Caprip (Moto G30)
-# Infinity-X product file that inherits Lineage/AOSP base product config.
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
 
-# Inherit base product definitions (architecture, base packages, telephony).
+# Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from device (device specific BoardConfig and device.mk)
+# Inherit from device
 $(call inherit-product, device/motorola/caprip/device.mk)
 
-# Inherit vendor blobs and vendor product definitions
-$(call inherit-product, vendor/motorola/caprip/caprip-vendor.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# Optional Infinity vendor/product additions (if present)
-$(call inherit-product-if-exists, vendor/infinity/config/common_full_phone.mk)
-
-#
-# Device identifier. Must come after inclusions above.
-#
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := infinity_caprip
 PRODUCT_DEVICE := caprip
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G30
+PRODUCT_MODEL := moto g(30)
 PRODUCT_MANUFACTURER := motorola
 
+# Infinity Flags
 INFINITY_MAINTAINER := Shipu
 
-
-# GMS client id base (if required / used by base)
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# Build fingerprint and build props (override as needed)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="caprip_retail-user 12 S0RC32.41-10-19-25 9b06d-e623ce release-keys" \
+    BuildFingerprint=motorola/caprip_retail/caprip:12/S0RC32.41-10-19-25/9b06d-e623ce:user/release-keys \
+    DeviceProduct=caprip_retail
