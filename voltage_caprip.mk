@@ -13,6 +13,9 @@ $(call inherit-product, device/motorola/caprip/device.mk)
 # Inherit some common VoltageOS stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := voltage_caprip
 PRODUCT_DEVICE := caprip
