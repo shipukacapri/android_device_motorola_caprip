@@ -1,0 +1,6 @@
+# Infinity Specific Properties
+ro.product.marketname=Motorola moto g30
+ro.infinity.soc=Snapdragon 662
+ro.infinity.camera=64MP + 8MP + 2MP + 2MP + 13MP
+ro.infinity.battery=5000 mAh
+ro.infinity.display=720x1640 , IPS LCD
