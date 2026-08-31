@@ -26,3 +26,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="caprip_retail-user 12 S0RC32.41-10-19-25 9b06d-e623ce release-keys" \
     BuildFingerprint=motorola/caprip_retail/caprip:12/S0RC32.41-10-19-25/9b06d-e623ce:user/release-keys \
     DeviceProduct=caprip_retail
+
+# Rising Flags
+WITH_GMS := true
+RISING_MAINTAINER := Shipu
+TARGET_ENABLE_BLUR := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingMaintainer="Shipu" \
+    RisingChipset="Snapdragon 662"
