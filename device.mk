@@ -56,10 +56,8 @@ PRODUCT_PACKAGES += \
     SystemUIResDevice \
     WifiResDevice \
     WifiResDeviceRetmea \
-    WifiResDeviceXT2129-3
-
-# Overlay Voltage Maintainer
-PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
+    WifiResDeviceXT2129-3 \
+    InfinityUpdater
 
 # Permissions
 PRODUCT_COPY_FILES += \
