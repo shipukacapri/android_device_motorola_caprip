@@ -13,9 +13,6 @@ $(call inherit-product, device/motorola/caprip/device.mk)
 # Inherit some common InfinityX stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# Inherit some common InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-
 # Infinity Flags
 INFINITY_MAINTAINER := Shipu
 # Whether Including Google Apps
